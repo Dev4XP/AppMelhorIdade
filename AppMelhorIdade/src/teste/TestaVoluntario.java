@@ -13,7 +13,7 @@ public class TestaVoluntario {
 		
 		Voluntario voluntario = new Voluntario();
 		voluntario.setGenero(false);
-		voluntario.setEstadoCivil("3");
+		voluntario.setEstadoCivil(3);
 		voluntario.setIdade(42);
 		voluntario.setNome("tamy");
 		voluntario.setVoluntario(true);
