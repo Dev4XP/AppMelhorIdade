@@ -42,6 +42,7 @@ public class Usuario {
 			break;
 
 		default:
+			System.out.println("Erro: nao existe essa opcao");
 			break;
 		}
 	}
