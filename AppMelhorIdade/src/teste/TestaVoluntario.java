@@ -1,23 +1,18 @@
 package teste;
 
 import negocio.Contato;
+import negocio.Endereco;
 import negocio.Voluntario;
 
 public class TestaVoluntario {
 	public static void main(String[] args) {
 		
-		Contato contato = new Contato();
-		contato.setTelefone("987654321");
-		contato.setEmail("tamyidosa@gmail.com");
-		contato.setCelular("9987654321");
+		Contato contatoVoluntario = new Contato("987654321", "tamyidosa@gmail.com",
+				"9987654321");
+
+		Endereco enderecoVoluntario = new Endereco("Rua do lado", 300, "Barra", "Rio de Janeiro", "RJ");
 		
-		Voluntario voluntario = new Voluntario();
-		voluntario.setGenero(false);
-		voluntario.setEstadoCivil(3);
-		voluntario.setIdade(42);
-		voluntario.setNome("tamy");
-		voluntario.setVoluntario(true);
-		voluntario.setContato(contato);
-		voluntario.exibir();
+		Voluntario voluntario = new Voluntario("tamy", 42, false, 3, contatoVoluntario, 
+				enderecoVoluntario);
 	}
 }

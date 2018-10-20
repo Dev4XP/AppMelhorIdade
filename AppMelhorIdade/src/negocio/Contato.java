@@ -7,6 +7,12 @@ public class Contato implements IExibido  {
 	private String email;
 	private String celular;
 	
+	public Contato(String telefone, String email, String celular) {
+		this.telefone = telefone;
+		this.email = email;
+		this.celular = celular;
+	}
+
 	public void exibir() {
 		System.out.printf("Telefone: %s\n"
 				+ "E-mail: %s\n"

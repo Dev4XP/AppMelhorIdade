@@ -6,7 +6,18 @@ public class Usuario {
 	private boolean genero;
 	private int estadoCivil;
 	private Contato contato;
+	private Endereco endereco;
 	
+	public Usuario(String nome, int idade, boolean genero, int estadoCivil, Contato contato, Endereco endereco) {
+		super();
+		this.nome = nome;
+		this.idade = idade;
+		this.genero = genero;
+		this.estadoCivil = estadoCivil;
+		this.contato = contato;
+		this.endereco = endereco;
+	}
+
 	public void exibir() {
 		System.out.printf("Nome: %s\n"
 				+ "Idade: %d\n"
@@ -16,6 +27,7 @@ public class Usuario {
 				(genero ? "masculino" : "femenino"));
 		estadoCivil();
 		contato.exibir();
+		endereco.exibir();
 	}
 	
 	public void estadoCivil() {
@@ -86,4 +98,13 @@ public class Usuario {
 	public void setContato(Contato contato) {
 		this.contato = contato;
 	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+	
 }
