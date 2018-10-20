@@ -5,10 +5,8 @@ public class Idoso extends Usuario {
 	
 	public void exibir() {
 		super.exibir();
-		System.out.printf("Necessidades Especiais?\n%s",
-				necessidadesEspeciais ? "sim\n" : "não\n");
-
-				
+		System.out.printf("Necessidades Especiais? %s",
+				necessidadesEspeciais ? "sim\n" : "não\n");			
 	}
 
 	public boolean isNecessidadesEspeciais() {

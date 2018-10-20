@@ -4,7 +4,7 @@ public class Usuario {
 	private String nome;
 	private int idade;
 	private boolean genero;
-	private int estadoCivil;
+	private String estadoCivil;
 	private Contato contato;
 	
 	public void exibir() {
@@ -21,23 +21,23 @@ public class Usuario {
 	public void estadoCivil() {
 		
 		switch (estadoCivil) {
-		case 1:
+		case "1":
 			System.out.println("Estado Civil: Solteiro");
 			break;
 			
-		case 2:
+		case "2":
 			System.out.println("Estado Civil: Casado");
 			break;
 			
-		case 3:
+		case "3":
 			System.out.println("Estado Civil: Separado");
 			break;
 			
-		case 4:
+		case "4":
 			System.out.println("Estado Civil: Divorciado");
 			break;
 			
-		case 5:
+		case "5":
 			System.out.println("Estado Civil: Viúvo");
 			break;
 
@@ -70,11 +70,11 @@ public class Usuario {
 		this.genero = genero;
 	}
 
-	public int getEstadoCivil() {
+	public String getEstadoCivil() {
 		return estadoCivil;
 	}
 
-	public void setEstadoCivil(int estadoCivil) {
+	public void setEstadoCivil(String estadoCivil) {
 		this.estadoCivil = estadoCivil;
 	}
 
@@ -86,7 +86,4 @@ public class Usuario {
 		this.contato = contato;
 	}
 	
-	
-
-
 }
