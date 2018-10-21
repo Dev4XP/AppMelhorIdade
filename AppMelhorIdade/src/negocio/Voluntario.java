@@ -5,7 +5,6 @@ public class Voluntario extends Usuario {
 	
 	public Voluntario(String nome, int idade, boolean genero, int estadoCivil, Contato contato, Endereco endereco) {
 		super(nome, idade, genero, estadoCivil, contato, endereco);
-		// TODO Auto-generated constructor stub
 	}
 
 

@@ -25,12 +25,12 @@ public class Usuario {
 				nome,
 				idade,
 				(genero ? "masculino" : "femenino"));
-		estadoCivil();
+		verificaEstadoCivil();
 		contato.exibir();
 		endereco.exibir();
 	}
 	
-	public void estadoCivil() {
+	public void verificaEstadoCivil() {
 		
 		switch (estadoCivil) {
 		case 1:
