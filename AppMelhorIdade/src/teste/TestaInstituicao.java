@@ -22,7 +22,7 @@ public class TestaInstituicao {
 		Endereco enderecoIdoso = new Endereco("Rua do centro", 250, "Centro", 
 				"Rio de Janeiro", "RJ");
 
-		Idoso idoso = new Idoso("leandro",60,true, 60, contatoIdoso, enderecoIdoso);
+		Idoso idoso = new Idoso("leandro",60,true, 60, contatoIdoso, enderecoIdoso, true);
 		List<Idoso> listarIdosos = new ArrayList<>();
 		listarIdosos.add(idoso);
 		
