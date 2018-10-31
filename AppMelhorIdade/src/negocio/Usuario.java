@@ -1,6 +1,8 @@
 package negocio;
 
-public class Usuario {
+import interfaces.IExibido;
+
+public abstract class  Usuario implements IExibido {
 	private String nome;
 	private int idade;
 	private boolean genero;

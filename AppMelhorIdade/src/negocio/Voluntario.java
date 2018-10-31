@@ -3,8 +3,9 @@ package negocio;
 public class Voluntario extends Usuario {
 	private boolean voluntario;
 	
-	public Voluntario(String nome, int idade, boolean genero, int estadoCivil, Contato contato, Endereco endereco) {
+	public Voluntario(String nome, int idade, boolean genero, int estadoCivil, Contato contato, Endereco endereco, boolean voluntario) {
 		super(nome, idade, genero, estadoCivil, contato, endereco);
+		this.voluntario = voluntario;
 	}
 
 

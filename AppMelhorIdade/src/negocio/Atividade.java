@@ -10,12 +10,12 @@ public class Atividade implements IExibido{
 	private String nome;
 	private Calendar hora;
 	private Calendar data;
-	private String duracao;
+	private float duracao;
 	private int vagas;
 	private String descricao;
 	private List<Voluntario> voluntarios;
 	
-	public Atividade(String nome, Calendar hora, Calendar data, String duracao, int vagas, String descricao,
+	public Atividade(String nome, Calendar hora, Calendar data, float duracao, int vagas, String descricao,
 			List<Voluntario> voluntarios) {
 		this.nome = nome;
 		this.hora = hora;
@@ -30,7 +30,7 @@ public class Atividade implements IExibido{
 		System.out.printf("Nome da atividade: %s\n"
 				+ "Horário da atividade: %s\n"
 				+ "Data da atividade: %s\n"
-				+ "Duração da atividade: %s\n"
+				+ "Duração da atividade: %.2f\n"
 				+ "Quantidade de vagas: %d\n"
 				+ "Descrição: %s\n",
 				nome,
@@ -74,11 +74,13 @@ public class Atividade implements IExibido{
 		this.data = data;
 	}
 
-	public String getDuracao() {
+
+
+	public float getDuracao() {
 		return duracao;
 	}
 
-	public void setDuracao(String duracao) {
+	public void setDuracao(float duracao) {
 		this.duracao = duracao;
 	}
 

@@ -20,8 +20,7 @@ public class TestaAtividade {
 
 		Endereco enderecoVoluntario = new Endereco("Rua do lado", 300, "Barra", "Rio de Janeiro", "RJ");
 		
-		Voluntario voluntario = new Voluntario("tamy", 42, false, 3, contatoVoluntario, 
-				enderecoVoluntario);
+		Voluntario voluntario = new Voluntario("tamy", 42, false, 3, contatoVoluntario,enderecoVoluntario, false);
 		List<Voluntario> voluntarios = new ArrayList<>();
 		voluntarios.add(voluntario);
 		
@@ -42,9 +41,8 @@ public class TestaAtividade {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}    
-        	
-		Atividade atividade = new Atividade("Aulas de informatica para idosos", horaAtividade, dataAtividade,
-				"2 horas", 20, "Era uma casa muito engraçada", voluntarios);
+		Atividade atividade = new Atividade("Aulas de informatica para idosos", horaAtividade, dataAtividade, 
+				2, 20, "Era uma casa muito engraçada", voluntarios);
 		List<Atividade> listaAtividades = new ArrayList<>();
 		listaAtividades.add(atividade);
 		atividade.exibir();

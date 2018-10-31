@@ -12,7 +12,7 @@ public class TestaVoluntario {
 
 		Endereco enderecoVoluntario = new Endereco("Rua do lado", 300, "Barra", "Rio de Janeiro", "RJ");
 		
-		Voluntario voluntario = new Voluntario("tamy", 42, false, 3, contatoVoluntario, 
-				enderecoVoluntario);
+		Voluntario voluntario = new Voluntario("tamy", 42, false, 3, contatoVoluntario,enderecoVoluntario, true);
+		voluntario.exibir();
 	}
 }
